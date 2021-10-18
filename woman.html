@@ -983,7 +983,8 @@ let dress1 = [
         div1.style.width = "90%";
         div1.style.margin = "200px";
         console.log(img1);
-        div1.append(img1);   
+        div1.append(img1);  
+        img1.setAttribute("class","dressimg1") 
        
         // parent.append(div1);
 
@@ -996,7 +997,7 @@ let dress1 = [
         img2.src = dress2[0].img;
         div2.style.width = "90%";
         div2.style.margin = "200px";
-        
+        img2.setAttribute("class","dressimg1") 
         div2.append(img2);   
         // parent.append(div1,div2); 
 
@@ -1006,12 +1007,14 @@ let dress1 = [
         let divc1 = document.createElement("div");
         let divc2 = document.createElement("div");
         divc1.textContent = "DRESSES FOR WOMEN";
+        divc1.setAttribute("class","textformedia")
         divc1.style.width = "90%";
         divc1.style.margin = " 0px 0px 0px 200px"; 
         style(divc1); 
         console.log(divc1);   
         divc2.textContent = "FROM EASY WRAP DRESS STYLES TO BODYCON SLIPS, WOMEN’S DRESSES COME IN ALL NEW SILHOUETTES, PRINTS AND COLOURS THIS SEASON. DISCOVER SOMETHING FOR EVERY OCCASION IN OUR ONLINE COLLECTION; WHETHER YOU’RE AFTER A BASIC SHIRT DRESS FOR WORK, OR A COSY KNITTED DRESS FOR THE WEEKEND. LOOKING FOR A PARTY CLASSIC? TAKE YOUR PICK FROM OUR EDIT OF CHIC LITTLE BLACK DRESSES AND GLAMOROUS MAXI LENGTH GOWNS.";    
         divc2.style.width = "70%";
+        divc2.setAttribute("id","textformedia")
         divc2.style.margin = " 0px 200px 200px 200px"; 
         style(divc2); 
         console.log(divc2);    
@@ -1022,7 +1025,7 @@ let dress1 = [
         let div3 = document.createElement("div");
 
         let img3 = document.createElement("img");
-
+        img3.setAttribute("class","dressimg1") 
         img3.src = dress3[0].img;
         div3.style.width = "90%";
         div3.style.margin = "200px";
@@ -1037,6 +1040,7 @@ let dress1 = [
         
 
         img4.src = dress4[0].img;
+        img4.setAttribute("class","dressimg4") 
         // function click(e) {
         //     // e.preventDefault();
         //     dress.push(dress4[0]);
