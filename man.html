@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
+    <link rel="stylesheet" href="man.css">
+    <!-- <style>
         #ham{
             width: 30px;
             margin-left: 10px;
@@ -416,8 +417,9 @@ margin-top: 1%;
             margin: auto;
             /* margin-left: 1500px; */
         }
+         */
 
-    </style>
+    </style> -->
 </head>
 <body style="background-color: #ffffff;" id="body">
     <div id="container">
@@ -1059,9 +1061,19 @@ let dress1 = [
             dress.push(dress4[0]);
             // var cart= JSON.parse( localStorage.getItem("cart"));
             localStorage.setItem("Zara_cart_dresses",JSON.stringify(dress));
+           // shop[0]=dress4[0].img
+            // shop[0].img1 = dress4[0].img;
+             // console.log(shop)
           window.location.href="specific-prod.html"
             let shop = JSON.parse(localStorage.getItem("cart"))
-            shop[0].img1 = dress4[0].img;
+           
+            var obj=shop[0]
+            for(key in shop[0]){
+              shop[0][key]=dress4[0].img;
+            
+            }
+           
+            
             localStorage.setItem("cart",JSON.stringify(shop))
         }
        
@@ -1151,8 +1163,18 @@ let dress1 = [
             //for indivisual cart
             window.location.href="specific-prod.html"
             let shop = JSON.parse(localStorage.getItem("cart"))
-            shop[0].img1 = dress5[0].img;
-            localStorage.setItem("cart",JSON.stringify(shop))
+           
+           var obj=shop[0]
+           for(key in shop[0]){
+             shop[0][key]=dress5[0].img;
+           
+           }
+          
+           
+           localStorage.setItem("cart",JSON.stringify(shop))
+            // let shop = JSON.parse(localStorage.getItem("cart"))
+            // shop[0].img1 = dress5[0].img;
+            // localStorage.setItem("cart",JSON.stringify(shop))
         }
 
 
@@ -1211,8 +1233,18 @@ let dress1 = [
 
             window.location.href="specific-prod.html"
             let shop = JSON.parse(localStorage.getItem("cart"))
-            shop[0].img1 = dress6[0].img;
-            localStorage.setItem("cart",JSON.stringify(shop))
+           
+           var obj=shop[0]
+           for(key in shop[0]){
+             shop[0][key]=dress6[0].img;
+           
+           }
+          
+           
+           localStorage.setItem("cart",JSON.stringify(shop))
+            // let shop = JSON.parse(localStorage.getItem("cart"))
+            // shop[0].img1 = dress6[0].img;
+            // localStorage.setItem("cart",JSON.stringify(shop))
         }
 
 
@@ -1270,10 +1302,20 @@ let dress1 = [
             dress.push(dress7[0]);
             localStorage.setItem("Zara_cart_dresses",JSON.stringify(dress));
 
-            window.location.href="specific-prod.html"
+            window.location.href="specific-prod.html";
             let shop = JSON.parse(localStorage.getItem("cart"))
-            shop[0].img1 = dress7[0].img;
-            localStorage.setItem("cart",JSON.stringify(shop))
+           
+           var obj=shop[0]
+           for(key in shop[0]){
+             shop[0][key]=dress7[0].img;
+           
+           }
+          
+           
+           localStorage.setItem("cart",JSON.stringify(shop))
+            // let shop = JSON.parse(localStorage.getItem("cart"))
+            // shop[0].img1 = dress7[0].img;
+            // localStorage.setItem("cart",JSON.stringify(shop))
         }
 
         // console.log(div100);
@@ -1359,10 +1401,20 @@ divm80.onclick=function(){
             localStorage.setItem("Zara_cart_dresses",JSON.stringify(dress));
 
 
-            window.location.href="specific-prod.html"
+            window.location.href="specific-prod.html";
             let shop = JSON.parse(localStorage.getItem("cart"))
-            shop[0].img1 = dress8[0].img;
-            localStorage.setItem("cart",JSON.stringify(shop))
+           
+           var obj=shop[0]
+           for(key in shop[0]){
+             shop[0][key]=dress8[0].img;
+           
+           }
+          
+           
+           localStorage.setItem("cart",JSON.stringify(shop))
+            // let shop = JSON.parse(localStorage.getItem("cart"))
+            // shop[0].img1 = dress8[0].img;
+            // localStorage.setItem("cart",JSON.stringify(shop))
 
 }
 console.log(divm80);
@@ -1423,8 +1475,18 @@ divm90.onclick=function(){
 
             window.location.href="specific-prod.html"
             let shop = JSON.parse(localStorage.getItem("cart"))
-            shop[0].img1 = dress9[0].img;
-            localStorage.setItem("cart",JSON.stringify(shop))
+           
+           var obj=shop[0]
+           for(key in shop[0]){
+             shop[0][key]=dress9[0].img;
+           
+           }
+          
+           
+           localStorage.setItem("cart",JSON.stringify(shop))
+            // let shop = JSON.parse(localStorage.getItem("cart"))
+            // shop[0].img1 = dress9[0].img;
+            // localStorage.setItem("cart",JSON.stringify(shop))
 }
 // console.log(divm90);
 
@@ -1484,10 +1546,20 @@ divm100.onclick=function(){
     dress.push(dress10[0]);
             localStorage.setItem("Zara_cart_dresses",JSON.stringify(dress));
 
-            window.location.href="specific-prod.html"
+            window.location.href="specific-prod.html";
             let shop = JSON.parse(localStorage.getItem("cart"))
-            shop[0].img1 = dress10[0].img;
-            localStorage.setItem("cart",JSON.stringify(shop))
+           
+           var obj=shop[0]
+           for(key in shop[0]){
+             shop[0][key]=dress10[0].img;
+           
+           }
+          
+           
+           localStorage.setItem("cart",JSON.stringify(shop))
+            // let shop = JSON.parse(localStorage.getItem("cart"))
+            // shop[0].img1 = dress10[0].img;
+            // localStorage.setItem("cart",JSON.stringify(shop))
 }
 // console.log(divm100);
 
@@ -1561,10 +1633,20 @@ divn80.append(imgn82,divnc83);
 divn80.onclick=function(){
     dress.push(dress11[0]);
             localStorage.setItem("Zara_cart_dresses",JSON.stringify(dress));
-            window.location.href="specific-prod.html"
+            window.location.href="specific-prod.html";
             let shop = JSON.parse(localStorage.getItem("cart"))
-            shop[0].img1 = dress11[0].img;
-            localStorage.setItem("cart",JSON.stringify(shop))
+           
+           var obj=shop[0]
+           for(key in shop[0]){
+             shop[0][key]=dress11[0].img;
+           
+           }
+          
+           
+           localStorage.setItem("cart",JSON.stringify(shop))
+            // let shop = JSON.parse(localStorage.getItem("cart"))
+            // shop[0].img1 = dress11[0].img;
+            // localStorage.setItem("cart",JSON.stringify(shop))
 
 }
 // console.log(divn80);
@@ -1625,10 +1707,20 @@ divn90.onclick=function(){
     dress.push(dress12[0]);
             localStorage.setItem("Zara_cart_dresses",JSON.stringify(dress));
 
-            window.location.href="specific-prod.html"
+            window.location.href="specific-prod.html";
             let shop = JSON.parse(localStorage.getItem("cart"))
-            shop[0].img1 = dress12[0].img;
-            localStorage.setItem("cart",JSON.stringify(shop))
+           
+           var obj=shop[0]
+           for(key in shop[0]){
+             shop[0][key]=dress12[0].img;
+           
+           }
+          
+           
+           localStorage.setItem("cart",JSON.stringify(shop))
+            // let shop = JSON.parse(localStorage.getItem("cart"))
+            // shop[0].img1 = dress12[0].img;
+            // localStorage.setItem("cart",JSON.stringify(shop))
 }
 
 // =====================================================================================
@@ -1708,8 +1800,18 @@ divo80.onclick=function(){
 
             window.location.href="specific-prod.html"
             let shop = JSON.parse(localStorage.getItem("cart"))
-            shop[0].img1 = dress13[0].img;
-            localStorage.setItem("cart",JSON.stringify(shop))
+           
+           var obj=shop[0]
+           for(key in shop[0]){
+             shop[0][key]=dress13[0].img;
+           
+           }
+          
+           
+           localStorage.setItem("cart",JSON.stringify(shop))
+            // let shop = JSON.parse(localStorage.getItem("cart"))
+            // shop[0].img1 = dress13[0].img;
+            // localStorage.setItem("cart",JSON.stringify(shop))
 }
 
 
@@ -1769,8 +1871,18 @@ divo90.onclick=function(){
 
             window.location.href="specific-prod.html"
             let shop = JSON.parse(localStorage.getItem("cart"))
-            shop[0].img1 = dress14[0].img;
-            localStorage.setItem("cart",JSON.stringify(shop))
+           
+           var obj=shop[0]
+           for(key in shop[0]){
+             shop[0][key]=dress14[0].img;
+           
+           }
+          
+           
+           localStorage.setItem("cart",JSON.stringify(shop))
+            // let shop = JSON.parse(localStorage.getItem("cart"))
+            // shop[0].img1 = dress14[0].img;
+            // localStorage.setItem("cart",JSON.stringify(shop))
 }
 
 
@@ -1831,8 +1943,18 @@ divo100.onclick=function(){
 
             window.location.href="specific-prod.html"
             let shop = JSON.parse(localStorage.getItem("cart"))
-            shop[0].img1 = dress15[0].img;
-            localStorage.setItem("cart",JSON.stringify(shop))
+           
+           var obj=shop[0]
+           for(key in shop[0]){
+             shop[0][key]=dress15[0].img;
+           
+           }
+          
+           
+           localStorage.setItem("cart",JSON.stringify(shop))
+            // let shop = JSON.parse(localStorage.getItem("cart"))
+            // shop[0].img1 = dress15[0].img;
+            // localStorage.setItem("cart",JSON.stringify(shop))
 }
 // console.log(divo100);
 
@@ -1912,8 +2034,18 @@ divp100.onclick=function(){
 
             window.location.href="specific-prod.html"
             let shop = JSON.parse(localStorage.getItem("cart"))
-            shop[0].img1 = dress16[0].img;
-            localStorage.setItem("cart",JSON.stringify(shop))
+           
+           var obj=shop[0]
+           for(key in shop[0]){
+             shop[0][key]=dress16[0].img;
+           
+           }
+          
+           
+           localStorage.setItem("cart",JSON.stringify(shop))
+            // let shop = JSON.parse(localStorage.getItem("cart"))
+            // shop[0].img1 = dress16[0].img;
+            // localStorage.setItem("cart",JSON.stringify(shop))
 }
 
 
@@ -1984,10 +2116,20 @@ divy100.onclick=function(){
     dress.push(dress19[0]);
             localStorage.setItem("Zara_cart_dresses",JSON.stringify(dress));
 
-            window.location.href="specific-prod.html"
+            window.location.href="specific-prod.html";
             let shop = JSON.parse(localStorage.getItem("cart"))
-            shop[0].img1 = dress19[0].img;
-            localStorage.setItem("cart",JSON.stringify(shop))
+           
+           var obj=shop[0]
+           for(key in shop[0]){
+             shop[0][key]=dress19[0].img;
+           
+           }
+          
+           
+           localStorage.setItem("cart",JSON.stringify(shop))
+            // let shop = JSON.parse(localStorage.getItem("cart"))
+            // shop[0].img1 = dress19[0].img;
+            // localStorage.setItem("cart",JSON.stringify(shop))
 }
 console.log(divy100);
 
@@ -2058,10 +2200,20 @@ divz100.onclick=function(){
     dress.push(dress20[0]);
             localStorage.setItem("Zara_cart_dresses",JSON.stringify(dress));
 
-            window.location.href="specific-prod.html"
+            window.location.href="specific-prod.html";
             let shop = JSON.parse(localStorage.getItem("cart"))
-            shop[0].img1 = dress20[0].img;
-            localStorage.setItem("cart",JSON.stringify(shop))
+           
+           var obj=shop[0]
+           for(key in shop[0]){
+             shop[0][key]=dress20[0].img;
+           
+           }
+          
+           
+           localStorage.setItem("cart",JSON.stringify(shop))
+            // let shop = JSON.parse(localStorage.getItem("cart"))
+            // shop[0].img1 = dress20[0].img;
+            // localStorage.setItem("cart",JSON.stringify(shop))
 }
 parent.append(div1,divc,div2,div3,div4,divc3,div7,divm7,divn7,divo7,divy100,divz100,divp100);  
 
