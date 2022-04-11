@@ -3,7 +3,7 @@
 In the week, we tried to make a clone of zara website. Zara have a luxury clothing lineup.
 
 ## Description
-
+In the end Of the Unit 2 of Masai curriculam,
 We had to clone the zara.com website. It is an e-commerce website having varieties of luxury items which are of high quality. We have tried to clone the pixel perfect website with the help of HTML. We have made different pages from home to payment page & the whole website have different functionalities and simple UI.
 
 ## Getting Started
